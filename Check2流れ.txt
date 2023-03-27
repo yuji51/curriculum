@@ -1,21 +1,9 @@
-0.pc1とブロードキャストでpingが通るか確認。
+1.PC-SW間とSW -SW間のVlan10設定
 
-1.STPの確認
-hostname#show spanning-tree
-デフォルトでvlan1が有効になってるか確認。
-
-2.STPの無効化
-hostname(config)#no spanning-tree vlan 1
-vlan1を無効にする。
-
-3.ブロードキャストストームが起きてるか確認する。
-
-4.PC-SW間とSW-SW間のVlan10設定
-
-5.STPの有効化
+2.STPの有効化
 hostname(config)#spanning-tree vlan 10
 
-6. STPの確認
+3. STPの確認
 vlan 10でstpが設定されてるか確認する。
 
-7.pc1とブロードキャストでpingが通るか確認。
+4.pc1とブロードキャストでpingが通るか確認。
