@@ -1,0 +1,81 @@
+body {
+width: 100%;
+}
+
+/*-------------------------------------------
+大枠中央揃え 全体の幅を400pxにする
+-------------------------------------------*/
+.wrapper {
+width: 400px;
+margin: 0 auto;
+}
+.header {
+height: 100px;
+background-color: #141f40;
+}
+.side {
+float: left;
+width: 150px;
+height: 250px;
+background-color: #80bfa8;
+}
+/*-------------------------------------------
+中枠右ボックス イエロー、ブルー、オレンジ２個、レッド
+-------------------------------------------*/
+.content {
+float: right;
+width: 250px;
+height: 150px;
+}
+/*-------------------------------------------
+中枠右の左ボックス イエローとブルーが入るボックス
+-------------------------------------------*/
+.content-top-left {
+float: left;
+width: 150px;
+height: 150px;
+}
+.content-top-left-top {
+height: 50px;
+background-color: #dbd400;
+}
+.content-top-left-bottom {
+height: 100px;
+background-color: #0093b7;
+}
+/*-------------------------------------------
+中枠右の右ボックス オレンジ2が入るボックス
+-------------------------------------------*/
+.content-top-right-top{
+float: right;
+width: 100px;
+height: 50px;
+background-color: #ff9e6b;
+}
+.content-top-right-bottom{
+float: right;
+width: 100px;
+height: 100px;
+background-color: #ff9e6b;
+}
+/*-------------------------------------------
+中枠右の下ボックス レッドが入る
+-------------------------------------------*/
+.content-bottom {
+height: 100px;
+background-color: #8c2727;
+}
+.footer {
+height: 100px;
+background-color: #d98d30;
+}
+
+/*-------------------------------------------
+中枠全体と中枠右上4部分のボックスにfloat実行後、
+clearfixのタグが実行される？
+-------------------------------------------*/
+.clearfix:after {
+content: "";/*--------before,after擬似要素を使ってコンテンツを挿入する際に使用する---------------*/
+display: block; /*--------対象のボックスをブロック化する---------------*/
+clear: both;/*floatプロパティによる回り込みをすべて解除します*/
+}
