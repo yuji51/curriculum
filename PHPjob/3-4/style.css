@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+/* index */
+body{
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+}
+
+h1{
+    color: white;
+    border-bottom: 1px solid white;
+}
